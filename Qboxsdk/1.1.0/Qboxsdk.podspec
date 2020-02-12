@@ -19,12 +19,13 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'QUISQUE', :file => 'LICENSE' }
   s.author           = { 'QUISQUE' => 'alvaro.mendozasainz@gmail.com' }
   s.source           = { :git => 'https://alvaroMS@bitbucket.org/quisque/qboxsdk-ios.git', :tag => s.version.to_s }
+
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
 
   s.source_files = 'Qboxsdk/*.{h,m}'
-  
+  s.private_header_files = 'Qboxsdk/*.h'
   # s.resource_bundles = {
   #   'Qboxsdk' => ['Qboxsdk/Assets/*.png']
   # }
